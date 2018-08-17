@@ -19,7 +19,7 @@ function showCountriesList(resp) {
     countriesList.innerHTML = '';
     resp.forEach(function(item) {
       var liEl = document.createElement('li');
-      liEl.innerText = item.name;
+      liEl.innerText ='Country: '+ item.name +'\nCapital: '+ item.capital+'\nPopulation: ' + item.population +'\nCurrency: '+ item.currencies;
       countriesList.appendChild(liEl);
     });
 }
